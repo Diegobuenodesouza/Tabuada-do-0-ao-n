@@ -26,6 +26,6 @@ export class TabuadaComponent implements OnInit {
   }
 
   alterarValor(evento : any): void {
-    this.valor =evento.target.value;
+    this.valor = evento.target.value;
   }
 }
