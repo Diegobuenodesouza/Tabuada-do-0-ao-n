@@ -1,0 +1,37 @@
+<div class="container">
+    <h1> Tabuada </h1>
+    
+    <div class="row">
+        <div class="col-1"></div>
+        <div *ngFor="let numero of numerosUm" class="col-2">
+            <div >
+                <button [value]="numero"   (click)="alterarValor($event)" >{{ numero}}</button>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>    
+    
+    <div class="row">
+        <div class="col-1"></div>
+        <div *ngFor="let numero of numerosDois" class="col-2">
+            <div >
+                <button [value]="numero"   (click)="alterarValor($event)" >{{ numero}}</button>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>    
+    
+    <h1> Cálculo </h1>
+    <div class="row" *ngIf="valor">
+        <div class="col-4"></div>
+        <div class="col-4 centralizar">            
+            <table >
+                <tr *ngFor="let numero of lista">
+                    <th> {{numero}} * {{ valor }} = {{ valor * numero }}</th>                  
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+</div>

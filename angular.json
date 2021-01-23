@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tabuada"
+    }
+  },
+  "defaultProject": "tabuada",
+  "cli": {
+    "analytics": "eae91b73-5fab-4e86-a749-fac15fd0c72b"
+  }
 }

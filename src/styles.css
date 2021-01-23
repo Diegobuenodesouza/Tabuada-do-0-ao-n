@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to left bottom, white, rgba(185, 238, 185, 0.678));
+    background-attachment: fixed;
+    
+}
